@@ -59,20 +59,15 @@ nav {
     height: 20px;
     position: relative;
     top: 2px;
-    stroke: var(--accent-color);
 }
 
 .list li:hover {
     color: var(--accent-color);
     transition: var(--transition);
-    stroke: var(--accent-color);
 }
 
-.list .active {
+.list li.active {
     color: var(--accent-color)
-}
-.list li .active svg{
-    stroke: var(--accent-color)
 }
 
 .icon {
@@ -249,7 +244,7 @@ nav {
     color: black;
     background-color: white;
 }
-.change span .active{
+.change span.active{
     background-color: var(--accent-color);
     transition: var(--transition);
     color: white;
