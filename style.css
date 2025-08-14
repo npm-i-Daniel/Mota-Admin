@@ -295,7 +295,7 @@ body {
 .other {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 .search h1 {
