@@ -1,0 +1,118 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+:root {
+    --accent-color: rgba(4, 107, 216, 0.84);
+    --transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+.header nav {
+    display: flex;
+    padding: 5px 20px;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: var(--transition);
+    z-index: 1000;
+    background-color: rgb(244, 244, 244);
+}
+
+.header nav.sticky {
+    background-color: rgb(244, 244, 244);
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1000;
+    animation: 420ms cubic-bezier(.165, .84, .44, 1) slide-in--down;
+    transition: var(--transition);
+}
+
+@keyframes slide-in--down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -100px;
+    margin-left: -100px;
+}
+
+.logo img {
+    height: 30%;
+}
+
+.logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+}
+
+.list {
+    margin-right: 200px;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li {
+    margin-left: 50px;
+    font-weight: 400;
+    transition: var(--transition);
+    display: flex;
+}
+
+.list li svg {
+    height: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.list li:hover {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.list li.active {
+    color: var(--accent-color)
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.icon1 svg {
+    height: 30px;
+    background-color: rgb(35, 35, 35);
+    margin-left: 10px;
+    fill: white;
+    padding: 4px;
+    transition: var(--transition);
+}
+
+.icon1 svg:hover {
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
