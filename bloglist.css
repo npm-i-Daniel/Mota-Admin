@@ -6,11 +6,10 @@
 
 :root {
     --accent-color: rgba(4, 107, 216, 0.84);
+    --lightgrey-color: rgb(234, 233, 233);
+    --darkgrey-color: rgb(187, 186, 186);
+    --bluelightgrey-color: rgb(238, 241, 245);
     --transition: all 0.3s ease-in-out;
-}
-
-body {
-    background-color: rgb(244, 244, 244);
 }
 
 .header nav {
@@ -24,11 +23,11 @@ body {
     top: 0;
     transition: var(--transition);
     z-index: 1000;
-    background-color: rgb(244, 244, 244);
+    background-color: white;
 }
 
 .header nav.sticky {
-    background-color: rgb(244, 244, 244);
+    background-color: white;
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     z-index: 1000;
@@ -73,7 +72,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.list li a{
+    text-decoration: none;
+    font-weight: 400;
+    transition: var(--transition);
+    color: black;
+}
 .list li {
     margin-left: 50px;
     font-weight: 400;
@@ -81,18 +85,18 @@ body {
     display: flex;
 }
 
-.list li svg {
+.list li a svg {
     height: 20px;
     position: relative;
-    top: 2px;
+    top: 6px;
 }
 
-.list li:hover {
+.list a:hover {
     color: var(--accent-color);
     transition: var(--transition);
 }
 
-.list li.active {
+.list a.active{
     color: var(--accent-color)
 }
 
@@ -177,7 +181,7 @@ body {
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
     background-color: white;
     border-radius: 5px;
-    border: 1px solid white;
+    border: 2px solid rgb(244, 244, 244);
 }
 
 .content img {
@@ -201,7 +205,7 @@ body {
     left: -290px;
     color: rgb(51, 53, 55);
     background-color: white;
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -223,7 +227,7 @@ body {
 }
 
 .content .text span {
-    background-color: rgba(128, 128, 128, 0.266);
+    background-color: rgb(243, 243, 243);
     padding: 5px 20px;
     position: relative;
     top: 60px;
@@ -243,7 +247,6 @@ body {
 }
 
 .change {
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,6 +259,7 @@ body {
     padding: 2px 4px;
     position: relative;
     top: 2px;
+    background-color: transparent;
 }
 
 .change svg {
@@ -264,6 +268,7 @@ body {
     padding: 2px 4px;
     height: 25px;
     transition: var(--transition);
+    border: 1px solid var(--lightgrey-color);
 }
 
 .change span {
@@ -272,6 +277,7 @@ body {
     transition: var(--transition);
     color: black;
     background-color: white;
+    border: 1px solid var(--lightgrey-color);
 }
 
 .change span.active {
@@ -308,7 +314,7 @@ body {
     width: 350px;
     height: 45px;
     padding: 5px 20px;
-    border: 1px solid grey;
+    border: 1px solid var(--lightgrey-color);
     caret-color: grey;
     background-color: white;
 }
@@ -324,7 +330,7 @@ body {
     background-color: var(--accent-color);
     padding: 10px 10px;
     position: relative;
-    top: 16.5px;
+    top: 17px;
     left: -6px;
 }
 
@@ -471,7 +477,7 @@ body {
     width: 350px;
     height: 45px;
     padding: 5px 20px;
-    border: 1px solid grey;
+    border: 1px solid var(--lightgrey-color);
     caret-color: grey;
     background-color: white;
 }
@@ -483,8 +489,11 @@ body {
     position: relative;
     left: -5px;
     color: white;
-    background-color: rgba(28, 27, 27, 0.94);
+    background-color: rgb(33, 37, 41);
     font-weight: 500;
+}
+.part4 .right .subscribe:hover{
+     background-color: rgb(28, 31, 35);
 }
 
 .part5 {
@@ -493,6 +502,7 @@ body {
     border-bottom: 1px solid grey;
     padding-bottom: 50px;
     padding-top: 25px;
+    background-color: rgb(244, 244, 244);
 }
 
 .ourlink h2 {
@@ -540,6 +550,7 @@ body {
 .part6 {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(244, 244, 244);
 }
 
 .part6 p {

@@ -6,11 +6,14 @@
 
 :root {
     --accent-color: rgba(4, 107, 216, 0.84);
+    --lightgrey-color: rgb(234, 233, 233);
+    --darkgrey-color: rgb(187, 186, 186);
+    --bluelightgrey-color: rgb(238, 241, 245);
     --transition: all 0.3s ease-in-out;
 }
 
 body {
-    background-color: rgb(244, 244, 244);
+    background-color: white;
 }
 
 .header nav {
@@ -24,11 +27,10 @@ body {
     top: 0;
     transition: var(--transition);
     z-index: 1000;
-    background-color: rgb(244, 244, 244);
 }
 
 .header nav.sticky {
-    background-color: rgb(244, 244, 244);
+    background-color: white;
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     z-index: 1000;
@@ -73,7 +75,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.list li a{
+    text-decoration: none;
+    font-weight: 400;
+    transition: var(--transition);
+    color: black;
+}
 .list li {
     margin-left: 50px;
     font-weight: 400;
@@ -81,18 +88,18 @@ body {
     display: flex;
 }
 
-.list li svg {
+.list li a svg {
     height: 20px;
     position: relative;
-    top: 2px;
+    top: 6px;
 }
 
-.list li:hover {
+.list a:hover {
     color: var(--accent-color);
     transition: var(--transition);
 }
 
-.list li.active {
+.list a.active{
     color: var(--accent-color)
 }
 
@@ -116,3 +123,621 @@ body {
     background-color: var(--accent-color);
     transition: var(--transition);
 }
+.container{
+    width: 100%;
+    height: 40rem;
+}
+.part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120vh;
+    overflow: hidden;
+}
+.part1 .left{
+    background-color: var(--bluelightgrey-color);
+    width: 670px;
+    height: 140vh;
+}
+.part1 .left h2{
+    position: relative;
+    top: 220px;
+    left: 50px;
+    font-size: 40px;
+    color: rgb(58, 122, 254);
+    font-family: cursive;
+}
+.part1 .left h1{
+    position: relative;
+    top: 185px;
+    left: 50px;
+    font-size: 70px;
+    font-weight: 800;
+}
+.part1 .left .text{
+    padding: 15px 25px;
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    top: 190px;
+    left: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part1 .left .text:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+.part1 .left .round1{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border-radius: 50%;
+    background-color: rgb(58, 122, 254);
+    width: 100px;
+    height: 100px;
+}
+.part1 .right img{
+    position: relative;
+    top: 60px;
+    right: 58px;
+    height: 110vh;
+}
+.part1 .right .round2,.round3{
+    border-radius: 50%;
+    background-color: var(--bluelightgrey-color);
+}
+.part1 .right .round2{
+    position: absolute;
+    top: 70px;
+    left: 875px;
+    width: 350px;
+    height: 350px;
+}
+.part1 .right .round3{
+    position: absolute;
+    top: 500px;
+    left: 1230px;
+    width: 100px;
+    height: 100px;
+}
+.part1 .right .change{
+    position: absolute;
+    top: 695px;
+    left: 1185px;
+}
+.part1 .right .change .previous{
+    position: relative;
+    left: 5px;
+}
+.part1 .right .change .previous,.next{
+    width: 80px;
+    background-color: var(--bluelightgrey-color);
+    transition: var(--transition);
+    border: none;
+}
+.part1 .right .change .previous:hover,.next:hover{
+    width: 80px;
+    background-color: white;
+    transition: var(--transition);
+}
+.part2 h1{
+    text-align: center;
+    font-size: 70px;
+}
+.part2 h4{
+    text-align: center;
+    position: relative;
+    top: -25px;
+    color: var(--accent-color);
+}
+.part2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part2 ul li{
+    margin-left: 40px;
+    font-weight: 600;
+    color: grey;
+}
+.part2 ul li.active{
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+.part2 .cart-img{
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+.part2 .cart-img .left img{
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+    position: relative;
+    left: 50px;
+}
+.part2 .cart-img .left .text{
+    padding: 15px 25px;
+    background-color: white;
+    position: relative;
+    top: -110px;
+    left: 180px;
+    width: fit-content;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part2 .cart-img .left .text:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+.part2 .cart-img .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+.part2 .cart-img .right .content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 60px;
+}
+.part2 .cart-img .right .content .box{
+    margin-left: 30px;
+}
+.part2 .cart-img .right .content .box img{
+    border: 1px solid rgb(234, 233, 233);
+    background-color: rgb(234, 233, 233);
+    width: 250px;
+    padding: 30px 5px;
+}
+.part2 .cart-img .right .content .box img:hover{
+    background-color: var(--darkgrey-color);
+}
+.part2 .cart-img .right .content .box .text h5{
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    top: -15px;
+    transition: var(--transition);
+}
+.part2 .cart-img .right .content .box .text h5:hover{
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+.part2 .cart-img .right .content .box .text h3{
+    font-weight: 700;
+    color: var(--accent-color);
+    position: relative;
+    top: -30px;
+}
+.part2 .cart-img .right .content .box .text h3 span{
+    font-weight: 700;
+    color: rgb(117, 162, 254);
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.part3{
+    display: flex;
+}
+.part3 .poster1{
+    display: flex;
+    width: 650px;
+    height: 440px;
+    background-color: rgb(237, 160, 176);
+    position: relative;
+    top: 50px;
+}
+.part3 .poster1 .text h1{
+    color: white;
+    font-weight: 750;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    left: -60px;
+}
+
+.part3 .poster1 .text span{
+    padding: 15px 25px;
+    background-color: white;
+    position: relative;
+    top: 140px;
+    left: -50px;
+    width: fit-content;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part3 .poster1 .text span:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+.part3 .poster2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+}
+.part3 .poster2 .part1{
+    display: flex;
+    width: 650;
+    height: 220px;
+    background-color: rgb(209, 248, 227);
+}
+.part3 .poster2 .part1 img{
+    width: 500px;
+}
+.part3 .poster2 .part1 span{
+    padding: 15px 25px;
+    background-color: white;
+    position: relative;
+    top: -60px;
+    left: -30px;
+    width: fit-content;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part3 .poster2 .part1 span:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+.part3 .poster2 .part2{
+    display: flex;
+}
+.part3 .poster2 .part2 .poster3{
+    display: flex;
+    background-color: rgb(255, 210, 181);
+    width: 340px;
+    height: 220px;
+    text-align: center;
+    overflow: hidden;
+}
+.part3 .poster2 .part2 .poster3 img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 0px;
+    left: -110px;
+}
+.part3 .poster2 .part2 .poster3 .text h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    position: relative;
+    left: -60px;
+    top: -20px;
+}
+.part3 .poster2 .part2 .poster3 .text .sale{
+    font-size: 10px;
+    font-weight: 600;
+    background-color: white;
+    padding: 5px 10px;
+    position: relative;
+    top: -45px;
+    left: -60px;
+}
+.part3 .poster2 .part2 .poster3 .text h3{
+    font-size: 11px;
+    font-weight: 600;
+    position: relative;
+    top: -45px;
+    left: -59px;
+}
+.part3 .poster2 .part2 .poster3 .text span{
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+    top: -40px;
+    left: -60px;
+    width: fit-content;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part3 .poster2 .part2 .poster3 .text span:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+
+.part3 .poster2 .part2 .poster4{
+    background-color: rgb(208, 241, 252);
+    width: 340px;
+    height: 220px;
+ 
+}
+.part3 .poster2 .part2 .poster4 img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    position: relative;
+    top: -40px;
+}
+.part3 .poster2 .part2 .poster4 span{
+    padding: 15px 25px;
+    background-color: white;
+    position: relative;
+    left: 165px;
+    top: -265px;
+    width: fit-content;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.part3 .poster2 .part2 .poster4 span:hover{
+    background-color: rgb(33, 37, 41);
+    color: white;
+    transition: var(--transition);
+}
+.part4{
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+.part4 .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part4 .text h1{
+    font-size: 70px;
+}
+.part4 .text h4{
+    position: relative;
+    top: -45px;
+    color: var(--accent-color);
+}
+.part5{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 25px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 60px;
+}
+.part5 .content .box {
+    display: flex;
+    border: 1px solid var(--lightgrey-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    width: 400px;
+}
+.part5 .content img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.part5 .content .text{
+    position: relative;
+    left: 20px;
+}
+.part5 .content .text h5 {
+    position: relative;
+    color: rgb(51, 53, 55);
+    background-color: var(--lightgrey-color);
+    width: fit-content;
+    padding: 5px 5px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.part5 .content .text h5:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transition: var(--transition);
+}
+
+.part5 .content .text h2{
+    position: relative;
+    top: -10px;
+    font-size: medium;
+    color: rgb(35, 35, 35);
+    transition: var(--transition)
+}
+
+.part5 .content .text h2:hover {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.part5 .cart{
+    width: 400px;
+    height: 640px;
+    border: 1px solid var(--lightgrey-color);
+}
+.part5 .cart img{
+    width: 400px;
+    text-align: center;
+}
+.part5 .cart .text h5 {
+    position: relative;
+    top: -285px;
+    left: 20px;
+    color: rgb(51, 53, 55);
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    width: fit-content;
+    transition: var(--transition);
+}
+.part5 .cart .text h5:hover{
+    background-color: var(--accent-color);
+    color: white;
+    transition: var(--transition);
+}
+
+.part5 .cart .text h1{
+    font-size: 23px;
+    padding: 5px 20px;
+    position: relative;
+    top: -40px;
+}
+.part5 .cart .text p{
+    font-size: 20px;
+    padding: 5px 20px;
+    color: grey;
+    font-weight: 500;
+    position: relative;
+    top: -60px;
+}
+.part5 .cart .text span{
+    background-color: var(--lightgrey-color);
+    padding: 10px 20px;
+    position: relative;
+    left: 20px;
+    transition: var(--transition);
+}
+.part5 .cart .text span:hover{
+    background-color: var(--accent-color);
+    color: white;
+    transition: var(--transition);
+}
+.part5 .content:last-of-type .box:nth-child(2),
+.part5 .content:last-of-type .box:nth-child(3),
+.part5 .content:last-of-type .box:nth-child(4){
+    position: relative;
+    top: 15px;
+}
+
+.part6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+
+.part6 .option {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part6 img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.part6 span {
+    color: grey;
+    position: relative;
+    top: -15px;
+    left: 10px;
+}
+
+.part7 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
+}
+
+.part7 .left p {
+    color: grey;
+}
+
+.part7 .right input {
+    width: 350px;
+    height: 45px;
+    padding: 5px 20px;
+    border: 1px solid var(--lightgrey-color);
+    caret-color: grey;
+    background-color: white;
+}
+.part7 ,.right button{
+    border: none;
+}
+.part7 .right .subscribe {
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    left: -5px;
+    color: white;
+    background-color: rgb(33, 37, 41);
+    font-weight: 500;
+}
+.part7 .right .subscribe:hover{
+    background-color: rgb(28, 31, 35);
+}
+
+.part8 {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    background-color: rgb(244, 244, 244);
+}
+
+.ourlink h2 {
+    text-align: start;
+}
+
+.ourlink ul {
+    display: flex;
+    list-style: none;
+}
+
+.ourlink li {
+    margin-right: 30px;
+    color: grey;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.ourlink li:hover {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.otherlink h2 {
+    text-align: end;
+}
+
+.otherlink ul {
+    display: flex;
+    list-style: none;
+}
+
+.otherlink li {
+    margin-right: 30px;
+    color: grey;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.otherlink li:hover {
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.part9 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+}
+
+.part9 p {
+    color: grey;
+    padding: 5px 20px;
+}
+
+.part9 span {
+    color: var(--accent-color);
+}
+
