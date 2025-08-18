@@ -460,9 +460,6 @@
 .part4 {
     background-color: rgb(244, 244, 244);
     padding: 50px;
-}
-
-.part4 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -480,6 +477,9 @@
     border: 1px solid var(--lightgrey-color);
     caret-color: grey;
     background-color: white;
+}
+.part4 .right button{
+    border: none;
 }
 
 .part4 .right .subscribe {

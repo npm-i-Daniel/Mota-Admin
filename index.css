@@ -342,13 +342,12 @@ body {
     top: 20px;
     left: -60px;
 }
-
 .part3 .poster1 .text span{
     padding: 15px 25px;
     background-color: white;
-    position: relative;
-    top: 140px;
-    left: -50px;
+    position: absolute;
+    top: 337px;
+    left: -45px;
     width: fit-content;
     font-weight: 600;
     transition: var(--transition);
@@ -376,9 +375,9 @@ body {
 .part3 .poster2 .part1 span{
     padding: 15px 25px;
     background-color: white;
-    position: relative;
-    top: -60px;
-    left: -30px;
+    position: absolute;
+    top: 24px;
+    left: 475px;
     width: fit-content;
     font-weight: 600;
     transition: var(--transition);
@@ -463,9 +462,9 @@ body {
 .part3 .poster2 .part2 .poster4 span{
     padding: 15px 25px;
     background-color: white;
-    position: relative;
-    left: 165px;
-    top: -265px;
+    position: absolute;
+    left: 507px;
+    top: 244px;
     width: fit-content;
     font-weight: 600;
     transition: var(--transition);
@@ -561,8 +560,8 @@ body {
 }
 .part5 .cart .text h5 {
     position: relative;
-    top: -285px;
-    left: 20px;
+    top: -290px;
+    left: 15px;
     color: rgb(51, 53, 55);
     background-color: white;
     padding: 5px 10px;
@@ -580,7 +579,7 @@ body {
     font-size: 23px;
     padding: 5px 20px;
     position: relative;
-    top: -40px;
+    top: -60px;
 }
 .part5 .cart .text p{
     font-size: 20px;
@@ -588,12 +587,13 @@ body {
     color: grey;
     font-weight: 500;
     position: relative;
-    top: -60px;
+    top: -80px;
 }
 .part5 .cart .text span{
     background-color: var(--lightgrey-color);
     padding: 10px 20px;
     position: relative;
+    top: 40px;
     left: 20px;
     transition: var(--transition);
 }
@@ -638,12 +638,13 @@ body {
 }
 
 .part7 {
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid grey;
-    background-color: rgb(244, 244, 244);
-    padding: 50px;
+    width: 100%;
 }
 
 .part7 .left p {
@@ -658,7 +659,7 @@ body {
     caret-color: grey;
     background-color: white;
 }
-.part7 ,.right button{
+.part7 .right button{
     border: none;
 }
 .part7 .right .subscribe {
