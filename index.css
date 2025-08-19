@@ -129,28 +129,31 @@ body {
 }
 .part1{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    height: 120vh;
+    height: 800px;
     overflow: hidden;
 }
 .part1 .left{
     background-color: var(--bluelightgrey-color);
     width: 670px;
-    height: 140vh;
+    height: 800px;
+    position: relative;
+    left: -75px;
 }
 .part1 .left h2{
     position: relative;
-    top: 220px;
-    left: 50px;
+    top: 170px;
+    left: 70px;
     font-size: 40px;
     color: rgb(58, 122, 254);
     font-family: cursive;
 }
 .part1 .left h1{
     position: relative;
-    top: 185px;
-    left: 50px;
+    top: 115px;
+    left: 70px;
     font-size: 70px;
     font-weight: 800;
 }
@@ -159,8 +162,8 @@ body {
     background-color: white;
     width: fit-content;
     position: relative;
-    top: 190px;
-    left: 50px;
+    top: 120px;
+    left: 70px;
     font-weight: 600;
     transition: var(--transition);
 }
@@ -172,7 +175,7 @@ body {
 .part1 .left .round1{
     position: absolute;
     top: 100px;
-    left: 30px;
+    left: 50px;
     border-radius: 50%;
     background-color: rgb(58, 122, 254);
     width: 100px;
@@ -180,32 +183,32 @@ body {
 }
 .part1 .right img{
     position: relative;
-    top: 60px;
-    right: 58px;
-    height: 110vh;
+    top: -30px;
+    right: 0px;
+    height: 700px;
 }
 .part1 .right .round2,.round3{
     border-radius: 50%;
     background-color: var(--bluelightgrey-color);
 }
 .part1 .right .round2{
-    position: absolute;
-    top: 70px;
-    left: 875px;
-    width: 350px;
-    height: 350px;
+    position: relative;
+    top: 285px;
+    left: 72px;
+    width: 340px;
+    height: 340px;
 }
 .part1 .right .round3{
-    position: absolute;
-    top: 500px;
-    left: 1230px;
+    position: relative;
+    top: -335px;
+    left: 438px;
     width: 100px;
     height: 100px;
 }
 .part1 .right .change{
-    position: absolute;
-    top: 695px;
-    left: 1185px;
+    position: relative;
+    top: -200px;
+    left: 370px;
 }
 .part1 .right .change .previous{
     position: relative;
@@ -221,6 +224,12 @@ body {
     width: 80px;
     background-color: white;
     transition: var(--transition);
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .part2 h1{
     text-align: center;
@@ -325,6 +334,8 @@ body {
 }
 .part3{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .part3 .poster1{
     display: flex;
@@ -360,14 +371,16 @@ body {
 .part3 .poster2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     top: 50px;
 }
 .part3 .poster2 .part1{
     display: flex;
-    width: 650;
     height: 220px;
     background-color: rgb(209, 248, 227);
+    width: 100%;
 }
 .part3 .poster2 .part1 img{
     width: 500px;
@@ -389,6 +402,7 @@ body {
 }
 .part3 .poster2 .part2{
     display: flex;
+    flex-direction: row;
 }
 .part3 .poster2 .part2 .poster3{
     display: flex;
