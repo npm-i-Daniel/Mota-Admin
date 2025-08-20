@@ -127,104 +127,46 @@ body {
     width: 100%;
     height: 40rem;
 }
-.part1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 800px;
-    overflow: hidden;
+.container .part1 {
+    background-image: url(img/banner1.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
 }
-.part1 .left{
-    background-color: var(--bluelightgrey-color);
-    width: 670px;
-    height: 800px;
-    position: relative;
-    left: -75px;
-}
-.part1 .left h2{
-    position: relative;
-    top: 170px;
-    left: 70px;
-    font-size: 40px;
-    color: rgb(58, 122, 254);
-    font-family: cursive;
-}
-.part1 .left h1{
-    position: relative;
-    top: 115px;
-    left: 70px;
-    font-size: 70px;
-    font-weight: 800;
-}
-.part1 .left .text{
-    padding: 15px 25px;
-    background-color: white;
-    width: fit-content;
-    position: relative;
-    top: 120px;
-    left: 70px;
-    font-weight: 600;
-    transition: var(--transition);
-}
-.part1 .left .text:hover{
-    background-color: rgb(33, 37, 41);
+
+.cover {
+    background: var(--accent-color);
+    width: 100%;
+    height: 100%;
     color: white;
-    transition: var(--transition);
+    text-align: center;
+    backdrop-filter: blur(1px);
 }
-.part1 .left .round1{
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    border-radius: 50%;
-    background-color: rgb(58, 122, 254);
-    width: 100px;
-    height: 100px;
-}
-.part1 .right img{
+
+.part1 h1 {
     position: relative;
-    top: -30px;
-    right: 0px;
-    height: 700px;
+    top: 30%;
+    font-size: 60px;
 }
-.part1 .right .round2,.round3{
-    border-radius: 50%;
-    background-color: var(--bluelightgrey-color);
-}
-.part1 .right .round2{
+
+.part1 span {
+    background-color: rgba(255, 255, 255, 0.141);
+    color: white;
+    padding: 5px 20px;
     position: relative;
-    top: 285px;
-    left: 72px;
-    width: 340px;
-    height: 340px;
+    top: 30%;
+    border: 1px rgba(255, 255, 255, 0.114) solid;
+    font-weight: 600;
 }
-.part1 .right .round3{
+
+.part1 span svg {
+    height: 20px;
     position: relative;
-    top: -335px;
-    left: 438px;
-    width: 100px;
-    height: 100px;
+    top: 5px;
 }
-.part1 .right .change{
-    position: relative;
-    top: -200px;
-    left: 370px;
-}
-.part1 .right .change .previous{
-    position: relative;
-    left: 5px;
-}
-.part1 .right .change .previous,.next{
-    width: 80px;
-    background-color: var(--bluelightgrey-color);
-    transition: var(--transition);
-    border: none;
-}
-.part1 .right .change .previous:hover,.next:hover{
-    width: 80px;
-    background-color: white;
-    transition: var(--transition);
-}
+
 .part2{
     display: flex;
     flex-direction: column;
@@ -380,6 +322,8 @@ body {
     height: 220px;
     background-color: rgb(209, 248, 227);
     width: 100%;
+    background-image: none;
+    margin: 0;
 }
 .part3 .poster2 .part1 img{
     width: 500px;
@@ -392,6 +336,7 @@ body {
     left: 475px;
     width: fit-content;
     font-weight: 600;
+    color: black;
     transition: var(--transition);
 }
 .part3 .poster2 .part1 span:hover{
